@@ -2,7 +2,7 @@
   "name": "goit-js-hw-10",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".posthtmlrc.js",
   "homepage": "https://SyrdiiDima.github.io/goit-js-hw-10",
 
   "scripts": {
