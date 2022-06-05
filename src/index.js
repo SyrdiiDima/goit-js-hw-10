@@ -23,7 +23,9 @@ function searchField(evt) {
     fetchCountries(searchWord)
       .then(data => {
         if (data.length > 10) {
-          Notify.info('Too many matches found. Please enter a more specific name');
+          Notify.info(
+            'Too many matches found. Please enter a more specific name'
+          );
           clearCountryList();
           clearCountryInfo();
         } else if (data.length >= 2 && data.length <= 10) {
@@ -57,9 +59,9 @@ function countryInfoMarkup(countryArray) {
       }" class="country-info__img" />${name.official}</div>
         <p><span class="country-info__boldtext">Capital: </span>${capital}</p>
         <p><span class="country-info__boldtext">Population: </span>${population}</p>
-        <p><span class="country-info__boldtext">Languages: </span>${Object.values(languages).join(
-          ', ',
-        )}</p>`;
+        <p><span class="country-info__boldtext">Languages: </span>${Object.values(
+          languages
+        ).join(', ')}</p>`;
     })
     .join('');
 }

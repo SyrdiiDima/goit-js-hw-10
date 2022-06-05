@@ -2,8 +2,9 @@
   "name": "goit-js-hw-10",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".posthtmlrc.js",
   "homepage": "https://SyrdiiDima.github.io/goit-js-hw-10",
+
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
@@ -12,18 +13,18 @@
     "type": "git",
     "url": "git+https://github.com/SyrdiiDima/goit-js-hw-10.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SyrdiiDima/goit-js-hw-10/issues"
   },
+
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "notiflix": "^3.2.5"
+  },
   "devDependencies": {
-    "parcel": "^2.6.0",
     "parcel-bundler": "^1.12.5",
     "posthtml-include": "^1.7.4"
-  },
-  "dependencies": {
-    "notiflix": "^3.2.5"
   }
 }
